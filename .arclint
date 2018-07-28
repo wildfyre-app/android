@@ -1,0 +1,29 @@
+{
+    "exclude": ["(libs/|wrapper/|gradlew)"],
+    "linters": {
+        "filename": {
+            "type": "filename"
+        },
+
+        "spelling": {
+            "type": "spelling"
+        },
+
+        "generated": {
+            "type": "generated"
+        },
+
+        "merge-conflict": {
+            "type": "merge-conflict"
+        },
+
+        "text": {
+            "type": "text",
+            "text.max-line-length": 120
+        },
+
+        "chmod": {
+            "type": "chmod"
+        }
+    }
+}
