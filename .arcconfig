@@ -1,4 +1,4 @@
 {
-  "phabricator.uri" : "https://phabricator.wildfyre.net/"
+  "phabricator.uri" : "https://phabricator.wildfyre.net/",
   "history.immutable" : true
 }
