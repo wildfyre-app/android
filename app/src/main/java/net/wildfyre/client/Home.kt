@@ -11,22 +11,22 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        navigation.setOnNavigationItemSelectedListener(OnNavigationItemSelectedListener { item ->
+        navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
                     message.setText(R.string.title_home)
-                    return@OnNavigationItemSelectedListener true
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.navigation_dashboard -> {
                     message.setText(R.string.title_dashboard)
-                    return@OnNavigationItemSelectedListener true
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.navigation_notifications -> {
                     message.setText(R.string.title_notifications)
-                    return@OnNavigationItemSelectedListener true
+                    return@setOnNavigationItemSelectedListener true
                 }
             }
             false
-        })
+        }
     }
 }
